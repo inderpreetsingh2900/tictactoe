@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="input-container">
+    <label for="boardSize">Enter Board Size:</label>
+    <input type="number" id="boardSize" min="2" max="10" placeholder="3">
+    <button onclick="generateMatrix()">Submit</button>
+  </div>
+
+  <div id="matrix-container"></div>
+
+  <div class="endgame">
+    <div class="text"></div>
+  </div>
+
+  <button onclick="generateMatrix()">Replay</button>
+
+  <button id="modeToggle" onclick="toggleAIMode()">Switch to AI Mode</button>
+  <h1 id="nodes"></h1>
+
+  <script src="/logic.js"></script>
+</body>
+
+</html>
