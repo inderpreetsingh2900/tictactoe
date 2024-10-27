@@ -54,7 +54,7 @@ void readInput()
     }
 
     fscanf(inputFile, "%d\n", &n);
-    if (n == 4)
+    if (n <= 4)
     {
         MAX_DEPTH = 6;
     }
